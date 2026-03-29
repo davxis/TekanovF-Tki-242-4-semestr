@@ -87,7 +87,7 @@ std::vector<Point> loadPointsFromFile(const std::string& filename) {
     return mapToPoints(readFileLines(filename));
 }
 
-// Строки  записать в файл
+// Строки записать в файл
 void savePointsToFile(const std::string& filename, const std::vector<Point>& points) {
     writeFileLines(filename, mapToStrings(points));
 }
